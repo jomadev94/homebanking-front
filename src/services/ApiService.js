@@ -20,7 +20,6 @@ export default class ApiService {
   static apiUrl = import.meta.env.VITE_API_URL;
 
   static async getClientInfo() {
-    useFetch
     return axios.get(`${this.apiUrl}/clients/current`);
   }
 
